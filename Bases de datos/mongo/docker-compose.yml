@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  # node:
+  #   restart: on-failure
+  #   build: ./nodejsapp
+  #   depends_on: 
+  #     - mongo
+  #   ports:
+  #     - 3000:3000
+  #   networks:
+  #     - grpctuiter
+  #   volumes:
+  #     - ./:/code
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+    networks:
+      - grpctuiter
+    volumes:
+      - mongodb:/data/db
+    command: [--auth]
+volumes:
+ mongodb:
+  
+
+networks:
+  grpctuiter:
+    driver: "bridge"

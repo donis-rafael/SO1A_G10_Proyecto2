@@ -1,0 +1,22 @@
+redis:
+  image: redis
+  container_name: cache
+  ports:
+    - 6379:6379
+  expose:
+    - 6379
+# app:
+#   build: ./
+#   volumes:
+#     - ./:/var/www/app
+#   links:
+#     - redis
+#   ports:
+#     - 3500:3500
+#   environment:
+#     - REDIS_URL=redis://cache
+#     - NODE_ENV=development
+#     - PORT=3500
+#   command:
+#     sh -c 'npm i && node server.js'
+
