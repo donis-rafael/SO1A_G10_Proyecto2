@@ -40,6 +40,17 @@ func main() {
 			panic(err)
 		}
 
+		/*
+
+
+
+
+		aquí almacena en las bases de datos el mensaje.
+
+
+
+
+		*/
 		fmt.Println(u)
 	}
 }
