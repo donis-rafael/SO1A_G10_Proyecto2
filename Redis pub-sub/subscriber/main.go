@@ -13,7 +13,7 @@ func main() {
 	// Create a new Redis Client
 	redisClient := redis.NewClient(&redis.Options{
 		Addr:     "redis:6379",  // We connect to host redis, thats what the hostname of the redis service is set to in the docker-compose
-		Password: "superSecret", // The password IF set in the redis Config file
+		Password: "grupo10", // The password IF set in the redis Config file
 		DB:       0,
 	})
 	// Ping the Redis server and check if any errors occured
