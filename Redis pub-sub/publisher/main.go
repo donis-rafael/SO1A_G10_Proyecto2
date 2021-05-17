@@ -90,10 +90,10 @@ func GenerateRandomUser(msg string) *User {
 	emailIndex := rand.Intn(emailProviderMax-1) + 1*/
 
 	message, err := json.Marshal(msg)
-	if err != nil {
+	/*if err != nil {
 		fmt.Fprintf("ParseForm() err: %v", err)
 		//return
-	}
+	}*/
 
 	fmt.Println(string(message))
 
