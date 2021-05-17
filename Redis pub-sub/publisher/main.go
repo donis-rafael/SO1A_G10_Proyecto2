@@ -98,9 +98,9 @@ func GenerateRandomUser(msg string) *User {
 
 	return &User{
 		name:	message.name,
-		location: message.location
-		gender: message.gender
-		age: message.age
+		location: message.location,
+		gender: message.gender,
+		age: message.age,
 		vaccine_type: message.vaccine_type,
 		/*Username: Names[nameIndex] + " " + SirNames[sirNameIndex],
 		Email:    Names[nameIndex] + SirNames[sirNameIndex] + "@" + EmailProviders[emailIndex],*/
