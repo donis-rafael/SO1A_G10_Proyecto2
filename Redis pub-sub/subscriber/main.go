@@ -57,8 +57,11 @@ func main() {
 
 // User is a struct representing newly registered users
 type User struct {
-	Username string
-	Email    string
+	name	 string
+	location string
+	gender   string
+	age  	 string
+	vaccine_type string
 }
 
 // MarshalBinary encodes the struct into a binary blob
