@@ -91,8 +91,8 @@ func GenerateRandomUser(msg string) *User {
 
 	message, err := json.Marshal(msg)
 	if err != nil {
-		fmt.Fprintf(w, "ParseForm() err: %v", err)
-		return
+		fmt.Fprintf("ParseForm() err: %v", err)
+		//return
 	}
 
 	fmt.Println(string(message))
