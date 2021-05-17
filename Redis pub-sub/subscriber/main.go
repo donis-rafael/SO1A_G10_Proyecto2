@@ -79,5 +79,5 @@ func (u *User) UnmarshalBinary(data []byte) error {
 }
 
 func (u *User) String() string {
-	return "User: " + u.Username + " registered with Email: " + u.Email
+	return "Nombre: " + u.name + " tipo vacuna: " + u.vaccine_type
 }
