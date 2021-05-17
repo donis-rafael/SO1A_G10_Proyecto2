@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"math/rand"
 	"time"
+	"fmt"
 
 	"github.com/go-redis/redis/v8"
 )
