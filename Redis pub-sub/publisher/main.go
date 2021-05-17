@@ -64,9 +64,9 @@ func sendMessage(msg string) {
 	//for {
 		// Publish a generated user to the new_users channel
 		//err := redisClient.Publish(ctx, "new_users", GenerateRandomUser()).Err()
-		err := redisClient.Publish(ctx, "new_users", GenerateRandomUser()).Err()
-		if err != nil {
-			panic(err)
+		error := redisClient.Publish(ctx, "new_users", GenerateRandomUser()).Err()
+		if error != nil {
+			panic(error)
 		}
 		// Sleep random time
 		rand.Seed(time.Now().UnixNano())
